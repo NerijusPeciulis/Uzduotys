@@ -7,6 +7,27 @@
     <title>5uzduotis</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      let age = 38;
+      function groups() {
+        return (generation =
+          age >= 10 && age <= 25
+            ? "Gen Z"
+            : age >= 26 && age <= 41
+            ? "Millennials"
+            : age >= 42 && age <= 57
+            ? "Gen X"
+            : age >= 58 && age <= 67
+            ? "Boomers II*"
+            : age >= 68 && age <= 76
+            ? "Boomers I*"
+            : age >= 77 && age <= 94
+            ? "Post War"
+            : age >= 95 && age <= 100
+            ? "WW II"
+            : console.log(generation));
+      }
+      console.log(groups());
+    </script>
   </body>
 </html>
