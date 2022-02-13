@@ -11,17 +11,15 @@
       let age = 17;
       const x = 18 - age;
       const isDrivingAllowed =
-        age >= 18
+        age < 1 || age > 100
+          ? "Klaida! netinkama reikšmė"
+          : age >= 18
           ? "Vairuoti gali"
-          : "vairuoti negali, tau trūksta" + " " + x + " " + "metų";
+          : age <= 17
+          ? "vairuoti negali, tau trūksta" + " " + x + " " + "metų"
+          : console.log(isDrivingAllowed);
 
       console.log(isDrivingAllowed);
-
-      // if (age < 1 || age > 100) {
-      //   console.log("Klaida! netinkama reikšmė");
-      // } else {
-      //   console.log("Klaida! netinkama reikšmė");
-      // }
     </script>
   </body>
 </html>
