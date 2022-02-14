@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Reikia kas trecia skaiciu pakelti kvadratu
+      const arr = [13, 23, 12, 45, 22, 48, 66, 100, 25, 89, 9];
+      for (let i = 1; i < arr.length; i += 3) {
+        let number = arr[i];
+        //vienas variantas console.log (number * number)
+        console.log(square(number));
+      }
+      function square(x) {
+        return x * x;
+      }
+    </script>
+  </body>
+</html>
